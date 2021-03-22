@@ -29,8 +29,10 @@ public class LineComparision {
 		int length2 = ((A2 - A1) ^ 2 + (B2 - B1) ^ 2);
 		if (length == length2) {
 			System.out.println("Both are equal");
-		} else {
-			System.out.println("Both are not equal");
+		} else if (length >= length2) {
+			System.out.println("Line1 is greter than line 2");
+		} else if (length <= length2) {
+			System.out.println("Line1 is smaller than line 2");
 		}
 	}
 }
